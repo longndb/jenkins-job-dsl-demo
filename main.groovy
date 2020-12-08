@@ -2,6 +2,7 @@ import models.*
 import templates.*
 
 import hudson.FilePath
+@Grab('org.yaml:snakeyaml:1.17')
 import org.yaml.snakeyaml.Yaml
 import org.yaml.snakeyaml.constructor.CustomClassLoaderConstructor
 
