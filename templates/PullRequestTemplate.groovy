@@ -22,17 +22,6 @@ class PullRequestTemplate {
                  }
             }
 
-            triggers {
-                githubPullRequest {
-                    cron('H/5 * * * *')
-                    triggerPhrase('@curalatebot rebuild')
-                    onlyTriggerPhrase(false)
-                    useGitHubHooks(true)
-                    permitAll(true)
-                    autoCloseFailedPullRequests(false)
-                }
-            }
-
             publishers {
                 githubCommitNotifier()
             }
